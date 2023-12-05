@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar livros</title>
+    <link rel="stylesheet" href="add-new-call.css">
+</head>
+<body>
+    <div>
+        <form class="form" action="../Controller/Call.php?operation=insert" method="POST">
+            <h1>Preencha os campos abaixo:</h1>
+            <input id="name" placeholder="Título do livro" min-input="50" required>
+            <input id="text" placeholder="Nome do autor" required>
+            <input type="number" placeholder="n° de pag." required>
+            <input type="text" placeholder="Descrição do livro" required>
+            <input type="text" placeholder="gênero/categoria" required>
+    
+            <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+    </body>
+    </html>
